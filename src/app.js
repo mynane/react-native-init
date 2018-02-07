@@ -8,6 +8,11 @@ registerScreens();
 registerScreenVisibilityListener();
 
 const tabs = [{
+    label: '首页',
+    screen: 'example.Home',
+    icon: require('../img/swap.png'),
+    title: '首页',
+}, {
   label: 'Navigation',
   screen: 'example.Types',
   icon: require('../img/list.png'),

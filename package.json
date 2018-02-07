@@ -15,6 +15,9 @@
     "react-native": "0.45.1",
     "react-native-animatable": "^1.1.0",
     "react-native-navigation": "latest",
+    "react-native-swiper": "^1.5.13",
+    "react-native-vector-icons": "^4.5.0",
+    "react-timer-mixin": "^0.13.3",
     "watchman": "^1.0.0"
   },
   "devDependencies": {

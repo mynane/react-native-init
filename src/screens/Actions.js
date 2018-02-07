@@ -139,6 +139,30 @@ class Actions extends React.Component {
               icon: require('../../img/delete@1x.png'),
               backgroundColor: '#4CAF50'
             }
+            ,
+            {
+              id: 'delete1',
+              icon: require('../../img/delete@1x.png'),
+              backgroundColor: '#4CAF50'
+            }
+            ,
+            {
+              id: 'delete2',
+              icon: require('../../img/delete@1x.png'),
+              backgroundColor: '#4CAF50'
+            }
+            ,
+            {
+              id: 'delete3',
+              icon: require('../../img/delete@1x.png'),
+              backgroundColor: '#4CAF50'
+            }
+            ,
+            {
+              id: 'delete4',
+              icon: require('../../img/delete@1x.png'),
+              backgroundColor: '#4CAF50'
+            }
           ]
         },
         animated: true,

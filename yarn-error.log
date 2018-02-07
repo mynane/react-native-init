@@ -1,0 +1,65 @@
+Arguments: 
+  D:\nodejs\node.exe D:\nodejs\node_modules\yarn\bin\yarn.js add react-native-vector-icons
+
+PATH: 
+  D:\Git\mingw32\bin;D:\Git\usr\bin;C:\Users\shijinhua\bin;C:\ProgramData\Oracle\Java\javapath;D:\Java\jdk1.8.0_131\bin;D:\Java\jdk1.8.0_131\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.5;D:\OC\ATG\ATG11.1\MySQL\win32\bin;D:\Python27;D:\Git\usr\bin;D:\Java\jdk1.8.0_131\bin;D:\Java\jdk1.8.0_131\jre\bin;D:\TortoiseSVN\bin;C:\Program Files\Git\cmd;D:\go\bin;E:\gobin;D:\Android\android-sdk\tools;D:\Android\android-sdk\platform-tools;D:\Python27\Scripts;D:\nodejs;D:\Microsoft VS Code\bin;C:\Users\shijinhua\AppData\Local\Programs\Fiddler;C:\program files\esafenet\cobra docguard client;D:\Egret\Egret Wing 3\bin;C:\Users\shijinhua\AppData\Roaming\npm
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  6.9.5
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "example",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+      "postinstall": "node ./scripts/postinstall.js",
+      "start": "(adb reverse tcp:8081 tcp:8081 || true) && node node_modules/react-native/local-cli/cli.js start --reset-cache",
+      "xcode": "open ios/example.xcodeproj",
+      "android": "cd android && ./gradlew installDebug",
+      "e2e": "detox test --configuration ios.sim.debug",
+      "e2e-release": "detox test --configuration ios.sim.release"
+    },
+    "dependencies": {
+      "react": "16.0.0-alpha.12",
+      "react-native": "0.45.1",
+      "react-native-animatable": "^1.1.0",
+      "react-native-navigation": "latest",
+      "watchman": "^1.0.0"
+    },
+    "devDependencies": {
+      "detox": "^5.0.0",
+      "mocha": "^3.4.2"
+    },
+    "detox": {
+      "specs": "test/e2e",
+      "configurations": {
+        "ios.sim.debug": {
+          "binaryPath": "ios/DerivedData/example/Build/Products/Debug-iphonesimulator/example.app",
+          "type": "ios.simulator",
+          "name": "iPhone 6s"
+        },
+        "ios.sim.release": {
+          "binaryPath": "ios/DerivedData/example/Build/Products/Release-iphonesimulator/example.app",
+          "type": "ios.simulator",
+          "name": "iPhone 6s"
+        }
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'F:\react-native\example\node_modules\babel-polyfill\node_modules\core-js\modules'
+      at Error (native)
